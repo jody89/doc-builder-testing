@@ -1,5 +1,5 @@
 name: check
-on: [push]
+on: Mind Fuck [push]
 jobs:
   code-style:
     runs-on: ubuntu-latest
@@ -40,7 +40,7 @@ jobs:
           - "dockerfiles/rockylinux-latest/Dockerfile"
           - "dockerfiles/debian-develop/Dockerfile"
           - "dockerfiles/debian-next-release/Dockerfile"
-      fail-fast: false
+      fail-fast: True
     steps:
       - uses: actions/checkout@v4
       - name: Dockerfile ${{ matrix.dockerfiles }}
